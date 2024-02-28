@@ -3,18 +3,18 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --light: #eaecee;
-  --color-text: #3c3e41;
-  --box-shadow: 5px 5px 15px #c1c8d3, -5px -5px 15px #ffffff;
-  --gradient-bg: linear-gradient(-45deg, red, #24bae3);
+  --dark: #000;
+  --color-text: #ffffff;
+  --box-shadow: 5px 5px 15px #00f7ff, -5px -5px 15px #00f7ff;
+  --gradient-bg: linear-gradient(-45deg, #00f7ff, #ffffff, #00f7ff, #ffffff);
 }
 a {
-  color: #3c3e41;
+  color: #00f7ff;
   text-decoration: none;
 }
 body {
   margin: 0;
-  background-color: var(--light);
+  background-color: var(--dark);
   color: var(--color-text);
   font-family: "Poppins", sans-serif;
   font-size: 15px;
@@ -24,10 +24,10 @@ header {
   top: 0;
   width: calc(100% - 20px);
   padding: 10px;
-  border-bottom: 1px solid #dce1e4;
+  border-bottom: 1px solid #00f7ff;
   display: grid;
   grid-template-columns: 30% 70%;
-  background-color: var(--light);
+  background-color: var(--dark);
   z-index: 1;
 }
 
@@ -37,9 +37,8 @@ header .nav li {
 }
 
 .nav li a:hover {
-  color: #24bae3;
+  color: #ffff;
 }
-
 
 header ul {
   margin: 0;
@@ -61,7 +60,7 @@ header ul li {
   margin-top: 150px;
   display: grid;
   grid-template-columns: 60% 40%;
-  border-bottom: 1px solid #dce1e4;
+  border-bottom: 1px solid #00f7ff;
   padding-bottom: 50px;
 }
 .banner .content {
@@ -172,15 +171,15 @@ header input {
 }
 
 .video {
-    width: 50%; /* Mengisi lebar parent element */
-    height: 50%; /* Menyesuaikan tinggi sesuai aspek rasio */
+    width: 50%;
+    height: 50%;
 }
 
 .listSkill {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 20px;
-  border-bottom: 1px solid #dce1e4;
+  border-bottom: 1px solid #00f7ff;
   padding-bottom: 50px;
 }
 .listSkill .evaluate {
@@ -203,7 +202,7 @@ header input {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  border-bottom: 1px solid #dce1e4;
+  border-bottom: 1px solid #00f7ff;
   padding-bottom: 50px;
 }
 .listProject .item {
